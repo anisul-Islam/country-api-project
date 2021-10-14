@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">Country API Testing App</h1>
+    </header>
+    <main>
+      <article>
+        <h1>Click/UnClick the following Link to show/hide a section</h1>
+        <!-- section-1 starts here  -->
+        <section class="section" id="section-1">
+          <h2 class="section-title" id="section-1-title">
+            Get Name of All Countries
+          </h2>
+          <div class="section-div-style section-div" id="section1-div">
+            <ul class="section-lists" id="section-lists1"></ul>
+          </div>
+        </section>
+        <!-- section-1 ends here  -->
+
+        <!-- section-2 starts here  -->
+        <section class="section" id="section-2">
+          <h2 class="section-title" id="section-2-title">
+            Search Country By Full Name
+          </h2>
+          <div class="section-div-style section-div" id="section2-div">
+            <form action="" id="form1">
+              <input
+                type="text"
+                placeholder="Enter full name of a country"
+                required
+              />
+              <div>
+                <button class="btn" type="submit">Search</button>
+              </div>
+            </form>
+            <button class="clear btn">Clear</button>
+            <p class="data-container"></p>
+          </div>
+        </section>
+        <!-- section-2 ends here  -->
+
+        <!-- section-3 starts here  -->
+        <section class="section" id="section-3">
+          <h2 class="section-title" id="section-3-title">
+            Find Border Countries
+          </h2>
+          <div class="section-div-style section-div" id="section3-div">
+            <form action="" id="form2">
+              <input type="text" placeholder="Enter a country name" />
+              <div>
+                <button class="btn" type="submit">Search</button>
+              </div>
+            </form>
+            <button class="clear btn">Clear</button>
+            <p class="data-container"></p>
+
+            <ul class="section-lists" id="section-lists2"></ul>
+          </div>
+        </section>
+        <!-- section-3 ends here  -->
+        <!-- section-4 starts here  -->
+        <section class="section" id="section-4">
+          <h2 class="section-title" id="section-4-title">
+            Find Countries By Language
+          </h2>
+          <div class="section-div-style section-div" id="section4-div">
+            <form action="" id="form3">
+              <input
+                type="text"
+                placeholder="2 characters of a language name"
+              />
+              <div>
+                <button class="btn" type="submit">Search</button>
+              </div>
+            </form>
+            <button class="clear btn">Clear</button>
+            <p class="data-container"></p>
+
+            <ul class="section-lists" id="section-lists3"></ul>
+          </div>
+        </section>
+        <!-- section-4 ends here  -->
+        <!-- section-5 starts here  -->
+        <section class="section" id="section-5">
+          <h2 class="section-title" id="section-5-title">
+            Find Countries By Population
+          </h2>
+          <div class="section-div-style section-div" id="section5-div">
+            <form action="" id="form4">
+              <input type="text" placeholder="Enter a value in million" />
+              <div>
+                <button class="btn" type="submit">Search</button>
+              </div>
+            </form>
+            <button class="clear btn">Clear</button>
+            <p class="data-container"></p>
+
+            <ul class="section-lists" id="section-lists4"></ul>
+          </div>
+        </section>
+        <!-- section-5 ends here  -->
+      </article>
+    </main>
+    <!-- footer section starts here  -->
+    <footer class="footer">
+      <p class="footer__copyright-text">
+        Copyright &copy; by Anisul Islam. All rights reserved.
+      </p>
+      <nav aria-label="Footer Menu" class="footer-nav">
+        <ul role="menubar2" id="menubar2" aria-label="Footer Menu">
+          <li role="none">
+            <a
+              href="https://www.facebook.com/studywithanis/"
+              target="_blank"
+              class="footer-nav__link"
+              role="menuitem"
+            >
+              <i class="fab fa-facebook footer-nav__icon"></i>
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="https://www.youtube.com/c/anisulislamrubel"
+              target="_blank"
+              class="footer-nav__link"
+              role="menuitem"
+            >
+              <i class="fab fa-youtube footer-nav__icon"></i>
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="https://github.com/anisul-Islam"
+              target="_blank"
+              class="footer-nav__link"
+              role="menuitem"
+            >
+              <i class="fab fa-github footer-nav__icon"></i>
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="https://www.linkedin.com/in/anisul2020/"
+              target="_blank"
+              class="footer-nav__link"
+              role="menuitem"
+            >
+              <i class="fab fa-linkedin footer-nav__icon"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- footer section ends here  -->
+    <script src="./assignment-1.js"></script>
+    <script src="./assignment-2.js"></script>
+  </body>
+</html>
